@@ -1,0 +1,57 @@
+.postPreview {
+  width: 380px;
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  &_link {
+    text-decoration: none;
+  }
+
+  &_image {
+    height: 300px;
+    position: relative;
+  }
+
+  &_hoverContainer {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: rgba(240,101,101,0.6);
+      transition: 0.2s;
+
+      .postPreview_hoverInfo {
+        opacity: 1;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  &_hoverInfo {
+    opacity: 0;
+    transition: 0.2s;
+    padding: 20px;
+  }
+
+  &_hoverStyle {
+    border: 2px dashed white;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+  }
+
+  &_tag {
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  &_imageArticle {
+    width: 50px;
+  }
+}

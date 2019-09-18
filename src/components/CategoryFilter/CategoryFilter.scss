@@ -1,0 +1,18 @@
+.filter {
+  user-select: none;
+
+  &_item {
+    border-radius: 4px;
+    border: 1px solid #F06565;
+    cursor: pointer;
+
+    &-active {
+      background-color: #F06565;
+      color: white;
+    }
+  }
+
+  &_button {
+    cursor: pointer;
+  }
+}

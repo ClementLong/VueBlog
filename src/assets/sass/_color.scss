@@ -1,0 +1,81 @@
+//////////////////////
+/////// Colors ///////
+//////////////////////
+
+// Charter // 
+$charter1: #F06565;
+$charter2: #fca947;
+$charter3: #38a906;
+$charter4: #464646;
+
+// Black and white //
+$white: #ffffff;
+$black: #222222;
+
+// Text //
+$dark: #333333;
+$bright: #fcfcfc;
+
+// Background //
+$bgDark: #333333;
+$bgBright: #fcfcfc;
+
+.c {
+    &-black {
+        color: $black;
+    }
+
+    &-white {
+        color: $white;
+    }
+
+    &-dark {
+        color: $dark;
+    }
+
+    &-bright {
+        color: $bright;
+    }
+
+    &-c1 {
+        color: $charter1;
+    }
+
+    &-c2 {
+        color: $charter2;
+    }
+
+    &-c3 {
+        color: $charter3;
+    }
+
+    &-c4 {
+        color: $charter4;
+    }
+}
+
+.bg {
+    &-dark {
+        background-color: $bgDark;
+    }
+
+    &-bright {
+        background-color: $bgBright;
+    }
+
+    &-c1 {
+        color: $charter1;
+    }
+
+    &-c2 {
+        color: $charter2;
+    }
+
+    &-c3 {
+        color: $charter3;
+    }
+
+    &-c4 {
+        color: $charter4;
+    }
+}

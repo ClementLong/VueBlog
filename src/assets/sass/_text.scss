@@ -1,0 +1,77 @@
+//////////////////////
+//////// Text ////////
+//////////////////////
+
+$title: "CalsonPro", sans-serif;
+$text: "Raleway", sans-serif;
+
+.t {
+  // Weight //
+  &w {
+
+    &-bold {
+      font-weight: 800;
+    }
+
+    &-thin {
+      font-weight: 300;
+    }
+  }
+
+  // Size //
+  &s {
+    &-title {
+      font-size: 48px;
+    }
+
+    &-subtitle {
+      font-size: 36px;
+    }
+    
+    &-smallTitle {
+      font-size: 22px;
+    }
+
+    &-paragraph {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-small {
+      font-size: 13px;
+    }
+  }
+
+  // Font //
+  &f {
+    &-title {
+      font-family: $title;
+    }
+
+    &-text {
+      font-family: $text;
+    }
+
+    &-upper {
+      text-transform: uppercase;
+    }
+  }
+
+  &d {
+
+    &-none {
+      text-decoration: none;
+    }
+
+    &-u {
+      text-decoration: underline;
+    }
+  }
+
+  &sp {
+    &-extend {
+      letter-spacing: 1.5px;
+    }
+  }
+
+}

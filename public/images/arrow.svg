@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Bouton Left Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="31" cy="31" r="31"></circle>
+        <filter x="-13.7%" y="-10.5%" width="127.4%" height="127.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.942947491   0 0 0 0 0.395275969   0 0 0 0 0.395275969  0 0 0 0.324247056 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-Article" transform="translate(-1290.000000, -2684.000000)">
+            <g id="Débuter-avec-Wissew" transform="translate(-4.000000, 2402.000000)">
+                <g id="Group-22">
+                    <g id="Group-18" transform="translate(72.000000, 119.000000)">
+                        <g id="Bouton-Left-Copy" transform="translate(1258.000000, 197.000000) scale(-1, 1) translate(-1258.000000, -197.000000) translate(1227.000000, 166.000000)">
+                            <g id="Oval-7">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Group" transform="translate(24.000000, 21.000000)" stroke="#FF9696" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                                <path d="M10.6764706,0.323529412 L0.517440991,10.482559" id="Line"></path>
+                                <path d="M10.482559,10.45 L0.5,20.482559" id="Line" transform="translate(5.491280, 15.466280) scale(-1, 1) translate(-5.491280, -15.466280) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

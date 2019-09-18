@@ -1,0 +1,178 @@
+//////////////////////
+/////// Layout ///////
+//////////////////////
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@mixin phone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+  
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin layout($classname) {
+  .#{$classname} {
+    @content;
+  }
+
+  @include phone {
+    .s\:#{$classname} {
+      @content;
+    }
+  }
+
+  @include tablet {
+    .m\:#{$classname} {
+      @content;
+    }
+  }
+}
+
+// Container //
+.container {
+  width: $desktop-width;
+  margin: auto;
+
+  @include phone {
+    width: 90%;
+  }
+
+  @include tablet {
+    width: 80%;
+  }
+}
+
+// Flex //
+.f {
+  display: flex;
+  flex-direction: row;
+}
+
+@include layout(fjc) {
+  &-s {
+    justify-content: flex-start;
+  }
+
+  &-e {
+    justify-content: flex-end;
+  }
+
+  &-c {
+    justify-content: center;
+  }
+
+  &-b {
+    justify-content: space-between;
+  }
+
+  &-a {
+    justify-content: space-around;
+  }
+}
+
+@include layout(fai) {
+  &-s {
+    align-items: flex-start;
+  }
+
+  &-e {
+    align-items: flex-end;
+  }
+
+  &-c {
+    align-items: center;
+  }
+}
+
+@include layout(fdc) {
+  flex-direction: column;
+}
+
+@include layout(fww) {
+  flex-wrap: wrap;
+}
+
+// Padding //
+@include layout(p) {
+  @for $i from 1 through 10 {
+    $size: $i * 10px;
+
+    // Top //
+    &-t-#{$i} {
+      padding-top: $size;
+    }
+
+    // Bottom //
+    &-b-#{$i} {
+      padding-bottom: $size;
+    }
+
+    // Left //
+    &-l-#{$i} {
+      padding-left: $size;
+    }
+
+    // Right //
+    &-r-#{$i} {
+      padding-right: $size;
+    }
+
+    // Vertical //
+    &-v-#{$i} {
+      padding-top: $size;
+      padding-bottom: $size;
+    }
+
+    // Horizontal //
+    &-h-#{$i} {
+      padding-left: $size;
+      padding-right: $size;
+    }
+  }
+}
+
+// Margin //
+@include layout(m) {
+  @for $i from 1 through 10 {
+    $size: $i * 10px;
+
+    // Top //
+    &-t-#{$i} {
+      margin-top: $size;
+    }
+
+    // Bottom //
+    &-b-#{$i} {
+      margin-bottom: $size;
+    }
+
+    // Left //
+    &-l-#{$i} {
+      margin-left: $size;
+    }
+
+    // Right //
+    &-r-#{$i} {
+      margin-right: $size;
+    }
+
+    // Vertical //
+    &-v-#{$i} {
+      margin-top: $size;
+      margin-bottom: $size;
+    }
+
+    // Horizontal //
+    &-h-#{$i} {
+      margin-left: $size;
+      margin-right: $size;
+    }
+  }
+}

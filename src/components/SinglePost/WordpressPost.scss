@@ -1,0 +1,386 @@
+@import '../../assets/sass/layout';
+
+.singlePost {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  width: 850px;
+
+  @include tablet {
+    width: 80%;
+  }
+
+  @include phone {
+    width: 90%;
+  }
+
+  // Color //
+  .has-pale-pink-color {
+    color: #F06565;
+  }
+
+  // Image //
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  // Link //
+  a {
+    color: #F06565;
+  }
+
+  // Paragraph //
+  p {
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+
+  strong {
+    font-weight: 800;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  // Title //
+  h2 {
+    font-family: 'CalsonGraph';
+    font-size: 28px;
+    color: #F06565;
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-family: 'CalsonGraph';
+    font-size: 24px;
+    color: #F06565;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  h4 {
+    font-family: 'CalsonGraph';
+    font-size: 20px;
+    color: #F06565;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+
+  // List //
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 10px
+    }
+  }
+
+  // Button //
+  .wp-block-button {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  .wp-block-button__link {
+    padding: 20px;
+    background-color: #F06565;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  // Image //
+  .wp-block-image {
+    width: 500px;
+    margin: auto;
+    padding: 20px 0;
+
+    @include phone {
+      width: 100%;
+    }
+
+    figcaption {
+      font-size: 15px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+
+  // Quote //
+  .wp-block-quote {
+    text-align: right;
+    width: 60%;
+    margin: auto;
+
+    @include phone {
+      width: 90%;
+    }
+
+    p {
+      color: #87898b;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    cite {
+      font-family: 'CalsonGraph';
+      font-size: 16px;
+      color: #F06565;
+    }
+  }
+
+  // Banner //
+  .wp-block-cover {
+    height: 300px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-family: 'CalsonGraph';
+      font-size: 24px;
+      color: #F06565;
+    }
+  }
+
+
+  // Galery //
+  .wp-block-gallery {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+  .blocks-gallery-item {
+    margin: 0;
+  }
+
+  // Duo media-text //
+  .wp-block-media-text {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px 0;
+
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+  .has-media-on-the-right {
+    flex-direction: row-reverse;
+
+    @include phone {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .wp-block-media-text__media {
+    width: 45%;
+
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  .wp-block-media-text__content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+
+    p {
+      margin: 0;
+    }
+
+    @include phone {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  // Separator //
+  .wp-block-separator {
+    margin: 40px 0;
+    border: none;
+    height: 1px;
+    background-color: #87898b;
+
+    @include phone {
+      margin: 20px 0;
+    }
+  }
+
+  // insta //
+  .wp-block-embed__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  // Patron //
+  .patron {
+    width: 690px;
+    border: 2px dashed #F06565;
+    position: relative;
+    margin: auto;
+
+    @include phone {
+      width: 100%;
+    }
+
+    &_title {
+      font-size: 30px;
+      font-family: 'CalsonGraph';
+      color: #F06565;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 30px;
+      padding: 0 15px;
+      background-color: #fff;
+      line-height: 0;
+      position: absolute;
+      top: -25px;
+      right: 0;
+
+      @include phone {
+        line-height: inherit;
+        font-size: 20px;
+        right: inherit;
+        top: -35px;
+        left: 10px;
+      }
+    }
+
+    &_name {
+      color: #000000;
+      font-size: 30px;
+      margin: 20px 0;
+
+      @include phone {
+        line-height: inherit;
+        font-size: 20px;
+      }
+    }
+
+    &_author {
+      color: #000000;
+      font-size: 30px;
+      margin: 20px 0;
+
+      @include phone {
+        line-height: inherit;
+        font-size: 20px;
+      }
+    }
+
+    &_content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      @include phone {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+
+      @include phone {
+        width: 100%;
+      }
+    }
+
+    &_text {
+      font-size: 14px;
+      line-height: 28px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    &_shop {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      align-items: center;
+      margin: auto;
+    }
+
+    &_link {
+      font-size: 14px;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: #F06565;
+      width: 150px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    &_price {
+      font-family: 'CalsonGraph';
+      font-size: 20px;
+    }
+
+    &_imageContainer {
+      width: 350px;
+      height: 210px;
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative;
+      top: 20px;
+      left: 20px;
+
+      @include phone {
+        width: calc(100% - 40px);
+        left: 0;
+        top: 0;
+        margin: 20px;
+      }
+    }
+
+    &_image {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

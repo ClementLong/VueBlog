@@ -1,0 +1,95 @@
+//////////////////////
+///// Font-face //////
+//////////////////////
+
+$basePath: '../../../public/';
+
+// Calson Graph
+
+@font-face {
+  font-family: 'CalsonGraph';
+  src: url($basePath + 'fonts/CaslonGraphique-Opti.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Calson Pro
+
+@font-face {
+  font-family: 'CalsonPro';
+  src: url($basePath + 'fonts/ACaslonPro-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalsonPro';
+  src: url($basePath + 'fonts/ACaslonPro-Italic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CalsonPro';
+  src: url($basePath + 'fonts/ACaslonPro-Semibold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalsonPro';
+  src: url($basePath + 'fonts/ACaslonPro-SemiboldItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CalsonPro';
+  src: url($basePath + 'fonts/ACaslonPro-Bold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+// Raleway
+
+@font-face {
+  font-family: 'Raleway';
+  src: url($basePath + 'fonts/Raleway-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url($basePath + 'fonts/Raleway-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url($basePath + 'fonts/Raleway-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url($basePath + 'fonts/Raleway-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url($basePath + 'fonts/Raleway-Thin.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url($basePath + 'fonts/Raleway-Bold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}

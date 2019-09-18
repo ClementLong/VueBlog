@@ -1,0 +1,21 @@
+.slider {
+
+  &_item {
+    height: 450px;
+    width: 100vw;
+    position: relative;
+  }
+
+  &_style {
+    border: 2px dashed white;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+  }
+
+  &_title {
+
+  }
+}
